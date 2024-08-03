@@ -16,12 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="acid" lang="en">
-      <body className={`${montserrat.className} relative dark:bg-[#121212] overflow-x-hidden`}>
-        <div className="absolute rounded-full -top-16 -right-16 h-52 w-52 border border-[#a6a6a6] z-0">
-
-        </div>
-        <div className="container mx-auto flex flex-col min-h-screen text-[#121212] dark:text-[#f5f5f5]">
-          <Navbar />
+      <body className={`${montserrat.className} dark:bg-[#121212] overflow-x-hidden`}>
+        <div className=" w-full flex flex-col min-h-screen text-[#121212] dark:text-[#f5f5f5]">
           {children}
         </div>
       </body>

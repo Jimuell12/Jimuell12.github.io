@@ -60,3 +60,13 @@ body {
 .fancy-border {
   border-radius: 40% 60% 68% 32% / 54% 36% 64% 46% ;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
