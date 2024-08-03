@@ -8,13 +8,13 @@ export default function Navbar() {
                 Jimuel Flojera
             </Link>
             <div className='mt-5 flex-row gap-10 hidden lg:flex'>
-                <Link href="/about" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
+                <Link href="/#about" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
                     About
                 </Link>
-                <Link href="/projects" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
+                <Link href="/#projects" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
                     Projects
                 </Link>
-                <Link href="/contact" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
+                <Link href="/#contact" className='tracking-widest text-xs font-bold hover:text-[#f5f5f5] text-[#a6a6a6]'>
                     Contact
                 </Link>
             </div>
