@@ -17,17 +17,46 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* globals.css */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-down-fade {
+  animation: slideDownFade 0.7s ease-in-out;
+}
+
+.slide-right-fade {
+  animation : slideRightFade 0.7s ease-in-out;
+}
+
+.fancy-border {
+  border-radius: 40% 60% 68% 32% / 54% 36% 64% 46% ;
 }
