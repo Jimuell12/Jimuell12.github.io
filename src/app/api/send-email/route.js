@@ -37,7 +37,7 @@ export async function POST(request) {
     await transporter.sendMail(mailOptions);
 
     // Return a success response
-    return {};
+    return null;
 
   } catch (error) {
     console.error('Error sending email:', error);
