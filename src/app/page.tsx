@@ -18,7 +18,7 @@ export default function Home() {
     });
   }, []);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault();
     if (email === '') {
       alert('Please enter your email address');
