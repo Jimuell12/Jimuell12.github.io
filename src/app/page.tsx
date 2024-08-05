@@ -272,7 +272,7 @@ export default function Home() {
 
             </div>
             <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
-              {/* This column will be hidden */}
+
             </div>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function Home() {
 
           </div>
           <div data-aos="flip-left" data-aos-delay="500"  className="lg:col-span-1 hover:grayscale-0 row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
-            {/* This column will be hidden */}
+
           </div>
         </div>
       </section>
