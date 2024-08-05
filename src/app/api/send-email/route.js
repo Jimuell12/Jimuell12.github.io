@@ -34,10 +34,10 @@ export async function POST(request) {
       html: html
     };
 
-    await transporter.sendMail(mailOptions);
-
-    // Return a success response
-    return null;
+    await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailOptions);
+    });
 
   } catch (error) {
     console.error('Error sending email:', error);
