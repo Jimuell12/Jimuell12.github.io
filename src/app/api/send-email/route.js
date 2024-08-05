@@ -1,32 +1,54 @@
 import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
+    const username = process.env.SMTP_USER;
+    const password = process.env.SMTP_PASS;
+    const myEmail = process.env.SMTP_EMAIL;
+
     // Extract form data
     const formData = await request.formData();
+    const name = "Jimuel Flojera"
     const email = formData.get('email');
     const subject = formData.get('subject');
     const html = formData.get('html');
 
-    // Prepare the query parameters
-    const queryParams = new URLSearchParams({
-      to: email,
-      subject: subject,
-      html_body: html,
-    }).toString();
-
-    // Send request to Flask server
-    const response = await fetch(`https://abisoivc.pythonanywhere.com/send_email?${queryParams}`, {
-      method: 'GET',
+    // Set up the nodemailer transporter
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: username,
+        pass: password
+      },
     });
 
-    // Handle the response from Flask server
-    const data = await response.json();
-    if (response.ok) {
-      return NextResponse.json({ message: 'Email sent successfully', ...data });
-    } else {
-      throw new Error(data.message || 'Failed to send email');
-    }
+    // Send email
+    const mailOptions = {
+      from: `"${name}" <${myEmail}>`,
+      to: email,
+      subject: subject,
+      html: html
+    };
+
+    await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+          console.error(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
+    });
+
+    // Return a success response
+    return NextResponse.json({ message: 'Email sent successfully' });
 
   } catch (error) {
     console.error('Error sending email:', error);
