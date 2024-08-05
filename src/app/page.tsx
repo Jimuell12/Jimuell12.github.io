@@ -406,20 +406,22 @@ export default function Home() {
         <div className="relative z-10">
           <h1 data-aos="zoom-in" className="text-start my-2">... /Other Projects ...</h1>
           <div className="grid lg:grid-cols-3 gap-5 font-sans">
-            <div data-aos="fade-left" data-aos-delay="500" className="p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
+
+            <div data-aos="fade-left" data-aos-delay="500" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg')]">
                 <img className="w-full h-full object-contain" src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/453469717_342143482296820_4226564615105196448_n.png?stp=dst-png_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGpUFDFWwvdXAURTSyETqQtu1-JIDzIaNO7X4kgPMho0wpZt7U46HUmgSzv2CPhUC6PVEx16LxxyU-TN4_KL6fm&_nc_ohc=_iCADO4AMasQ7kNvgGm5s9J&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1QHWJgfaSXNnYZU-DbKHn6MQL2sYUDzwLgl6S5pupnbczw&oe=66D84F9A" alt="" />
               </div>
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
-                  <h1 className="font-bold text-xl text-[#121212]">Recifind</h1>
-                  <p className="text-base text-justify text-[#a6a6a6] italic mt-5">Recifind is an innovative app that leverages <span className="text-[#121212]">object detection technology to classify ingredients in real-time.</span>  By analyzing what’s visible through your camera, it provides personalized recipe suggestions based on the ingredients detected.</p>
+                  <h1 className="font-bold text-base lg:text-xl text-[#121212]">Recifind</h1>
+                  <p className="text-xs lg:text-base  text-[#a6a6a6] italic mt-5">Recifind is an innovative app that leverages <span className="text-[#121212]">object detection technology to classify ingredients in real-time.</span>  By analyzing what’s visible through your camera, it provides personalized recipe suggestions based on the ingredients detected.</p>
                 </div>
-                <p className="mt-5 mb-0 text-lg text-[#121212]">Native Android Development / Object Detection / Image Classification / Java / TensorFlow Lite / XML </p>
+                <p className="mt-5 mb-0 text-sm lg:text-lg text-[#121212]">Native Android Development / Object Detection / Image Classification / Java / TensorFlow Lite / XML </p>
               </div>
 
             </div>
-            <div data-aos="fade-left" data-aos-delay="700" className="p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212] flex flex-col h-full">
+
+            <div data-aos="fade-left" data-aos-delay="700" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212] flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://media.istockphoto.com/id/1279701336/vector/phone-with-app-alarm-clock-on-the-screen.jpg?s=612x612&w=0&k=20&c=2QwKQyXKVbZaMK6jjpaaQ5UUw62VcVw6VngFCIQDXmM=')]">
                 <img className="w-full h-full object-contain" src="https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/452296607_858528729540455_7443192680488425142_n.png?stp=dst-png_s1080x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFXfWYJ7teuTbKvtb9tUO4QYbQA1FTMt2VhtADUVMy3Zbfhq6i3ncaKx-0KPOHh59hFwEabQwSM-N9AnFJh9cPu&_nc_ohc=kd9OR3hBAr4Q7kNvgFdtx7w&_nc_ht=scontent.fmnl17-6.fna&oh=03_Q7cD1QHL3rwQ2EtVc8ewUp3Ql_zI_jWVmjr5ZlF97FEe0cCJOA&oe=66D88310" alt="Image description" />
               </div>
@@ -427,14 +429,14 @@ export default function Home() {
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">RemindMe</h1>
                   <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">RemindMe is a Pomodoro timer app that enhances your productivity with </p>
-                  <span>integrated alarms to notify you precisely when it's time to switch tasks.</span>
+                  <span className="text-xs italic">integrated alarms to notify you precisely when it's time to switch tasks.</span>
                   <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> Designed to help you stay focused and manage your time effectively, RemindMe ensures you maintain a productive rhythm throughout your day.</span>
                 </div>
-                <p className="mt-5 mb-0 text-lg">Native Android Development / Java / XML</p>
+                <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Java / XML</p>
               </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="900" className="p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212]">
+            <div data-aos="fade-left" data-aos-delay="900" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212]">
               <div className="h-60 rounded-3xl bg-[url('https://img.freepik.com/free-vector/blur-pink-blue-abstract-gradient-background-vector_53876-174836.jpg')]">
                 <img className="w-full h-full object-contain scale-x-[-1]" src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/449860516_1760406804492148_4362601071039468395_n.png?stp=dst-png_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGzWkDrYEqG50HnSjT4SOZ73MauoLyWXPjcxq6gvJZc-KDMLgzDbsd4bjK32NWva5YqRoEQINFDGhXAlq8-EKk-&_nc_ohc=HmgiiTBGDHIQ7kNvgEE6cLA&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1QHNK-pwKbb8WZgCfSnmuR8MSvPeGXJgLkdM2yjgoy4_Hw&oe=66D85425" alt="" />
               </div>
@@ -442,7 +444,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">TasteBuds</h1>
                   <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">Tastebud is an innovative app that utilizes</p>
-                  <span>facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
+                  <span className="text-xs italic">facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
                   <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> By analyzing the user's facial expressions, Tastebud provides insights into their taste preferences. Whether you’re experimenting with new flavors or just curious about taste reactions, Tastebud offers a unique way to understand and enjoy your food experiences. </span>
                   <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Object Detection / Image Classification / Text Classification / Java / TensorFlow Lite / XML </p>
                 </div>
