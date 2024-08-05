@@ -1,57 +1,32 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
-    const username = process.env.SMTP_USER;
-    const password = process.env.SMTP_PASS;
-    const myEmail = process.env.SMTP_EMAIL;
-
     // Extract form data
     const formData = await request.formData();
-    const name = "Jimuel Flojera";
     const email = formData.get('email');
     const subject = formData.get('subject');
     const html = formData.get('html');
 
-    // Set up the nodemailer transporter
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: username,
-        pass: password
-      },
-    });
-
-    // Send email function
-    const sendMail = async (mailOptions) => {
-      return new Promise((resolve, reject) => {
-        transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-            return reject(error);
-          }
-          resolve(info);
-        });
-      });
-    };
-
-    // Mail options
-    const mailOptions = {
-      from: `"${name}" <${myEmail}>`,
+    // Prepare the query parameters
+    const queryParams = new URLSearchParams({
       to: email,
       subject: subject,
-      html: html
-    };
+      html_body: html,
+    }).toString();
 
-    // Send email and await the result
-    const result = await sendMail(mailOptions);
-    console.log('Email sent:', result);
+    // Send request to Flask server
+    const response = await fetch(`https://abisoivc.pythonanywhere.com/send_email?${queryParams}`, {
+      method: 'GET',
+    });
 
-    // Return a success response after the email is sent
-    return NextResponse.json({ message: 'Email sent successfully' });
+    // Handle the response from Flask server
+    const data = await response.json();
+    if (response.ok) {
+      return NextResponse.json({ message: 'Email sent successfully', ...data });
+    } else {
+      throw new Error(data.message || 'Failed to send email');
+    }
 
   } catch (error) {
     console.error('Error sending email:', error);
