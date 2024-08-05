@@ -13,7 +13,7 @@ export default function Home() {
     AOS.init({
       duration: 1000,
       once: true,
-      offset: -10,
+      offset: -5,
       delay: 200,
     });
   }, []);
@@ -244,15 +244,15 @@ export default function Home() {
                 </div>
               </div>
               <br />
-              <div className="text-[#a6a6a6] italic text-xs lg:text-base">
-                <span className="text-xs lg:text-base text-[#f5f5f5]">Alarment's IMS</span> - A web-based inventory management system that includes a <span className="text-[#f5f5f5]">purchase order feature for tracking</span> the movement of packages.
-                <p className="text-xs lg:text-base text-[#a6a6a6] mt-5">
+              <div data-aos="fade-left" data-aos-delay="600" className="text-[#a6a6a6]  italic text-xs lg:text-base">
+                <span data-aos="fade-left" data-aos-delay="300" className="text-xs lg:text-base text-[#f5f5f5]">Alarment's IMS</span> - A web-based inventory management system that includes a <span className="text-[#f5f5f5]">purchase order feature for tracking</span> the movement of packages.
+                <p data-aos="fade-left" data-aos-delay="600" className="text-xs lg:text-base text-[#a6a6a6] mt-5">
                   This system leverages <span className="text-[#f5f5f5]">Laravel, MySQL, and Tailwindcss</span> for its core functionality, while Flowbite enhances its design and user experience.
                 </p>
               </div>
 
 
-              <div className="w-min mt-5 lg:mt-16 flex">
+              <div data-aos="zoom-in" data-aos-delay="200" className="w-min mt-5 lg:mt-16 flex">
                 <div className="rounded-full p-3 border border-[#f5f5f5]">
                   <svg className="size-4 invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
                 </div>
@@ -266,12 +266,12 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             </div>
-            <div className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/453456077_954375150036736_5737758718517499147_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5EE4_PN3z7bB-fW88sTeWXJ_I1GaUoiZcn8jUZpSiJiQAoNhdIYeMfUbzZF02cneaC09j9PEHGWGGoBXib4Cr&_nc_ohc=CP3VEEtP2PUQ7kNvgF00vwj&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEvwG9hLmrylA7A5NGoYqXklpNVKl-68RUeEXroLc7Vcw&oe=66D6161F')]">
+            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/453456077_954375150036736_5737758718517499147_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5EE4_PN3z7bB-fW88sTeWXJ_I1GaUoiZcn8jUZpSiJiQAoNhdIYeMfUbzZF02cneaC09j9PEHGWGGoBXib4Cr&_nc_ohc=CP3VEEtP2PUQ7kNvgF00vwj&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEvwG9hLmrylA7A5NGoYqXklpNVKl-68RUeEXroLc7Vcw&oe=66D6161F')]">
 
             </div>
-            <div className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
               {/* This column will be hidden */}
             </div>
           </div>
@@ -283,44 +283,44 @@ export default function Home() {
 
         </div>
         <div className="grid lg:grid grid-cols-6 lg:grid-cols-6 lg:grid-rows-4 grid-rows-7 gap-4 h-5/6 mt-10 relative z-10">
-          <div className="lg:col-span-1 hidden lg:flex row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
+          <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
 
           </div>
-          <div className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-1 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.xx.fbcdn.net/v/t1.15752-9/453704514_802289732114480_9141762149386848360_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFjPe7Jbec8cw7jkqtdYhNe16oCKwsbZ_LXqgIrCxtn8m4LO-x6SqZqOBxNEOeCTQta-x7UTgz6gfddhOeBjOox&_nc_ohc=41ZL40UMtyMQ7kNvgGStxq4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFPbXXB3U0z9UhOV_XJcvFCnNcNLc4Uf2v9aNAF9wgL2Q&oe=66D5FFAD')]">
+          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-1 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.xx.fbcdn.net/v/t1.15752-9/453704514_802289732114480_9141762149386848360_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFjPe7Jbec8cw7jkqtdYhNe16oCKwsbZ_LXqgIrCxtn8m4LO-x6SqZqOBxNEOeCTQta-x7UTgz6gfddhOeBjOox&_nc_ohc=41ZL40UMtyMQ7kNvgGStxq4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFPbXXB3U0z9UhOV_XJcvFCnNcNLc4Uf2v9aNAF9wgL2Q&oe=66D5FFAD')]">
 
           </div>
-          <div className="lg:col-span-1 lg:row-start-1 lg:row-span-3 col-span-2 row-start-3 row-span-1 p-2 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
+          <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-1 lg:row-span-3 col-span-2 row-start-3 row-span-1 p-2 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
 
           </div>
           <div className="lg:col-span-2 lg:row-start-1 lg:row-span-4 col-span-6 row-start-4 p-6 font-sans">
-            <h1 className="font-semibold text-lg lg:text-3xl mb-2 lg:mb-5">Antonio's Curtain and Upholstery Ltd.</h1>
-            <div className="max-w-xs text-[#a6a6a6] text-sm cursor-default">
-              <div className="border my-2 mr-1 inline-block items-center hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
+            <h1 data-aos="zoom-in" className="font-semibold lg:text-right text-lg lg:text-3xl mb-2 lg:mb-5">Antonio's Curtain and Upholstery Ltd.</h1>
+            <div className="max-w-xs lg:max-w-full text-right text-[#a6a6a6] text-sm cursor-default">
+              <div data-aos="fade-right" data-aos-delay="100" className="border my-2 mr-1 inline-block items-center hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>HTML</p>
               </div>
-              <div className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
+              <div data-aos="fade-right" data-aos-delay="200" className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>JavaScript</p>
               </div>
-              <div className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
+              <div data-aos="fade-right" data-aos-delay="300" className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>NodeJS</p>
               </div>
-              <div className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
+              <div data-aos="fade-right" data-aos-delay="400" className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>CSS</p>
               </div>
-              <div className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
+              <div data-aos="fade-right" data-aos-delay="500" className="border m-1 inline-block hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>Firebase</p>
               </div>
             </div>
             <br />
-            <div className="text-[#a6a6a6] italic">
-              <span className="text-xs lg:text-base text-[#f5f5f5]">Antonio's Curtain and Upholstery</span> - A website that showcases the company's<span className="text-[#f5f5f5]"> products and services </span>, as well as a contact form for inquiries.
-              <p className="text-xs lg:text-base text-[#a6a6a6] mt-5">
+            <div data-aos="fade-left" data-aos-delay="600" className="text-[#a6a6a6] italic lg:text-right">
+              <span data-aos="fade-left" data-aos-delay="300" className="text-xs lg:text-base text-[#f5f5f5]">Antonio's Curtain and Upholstery</span> - A website that showcases the company's<span className="text-[#f5f5f5]"> products and services </span>, as well as a contact form for inquiries.
+              <p data-aos="fade-left" data-aos-delay="600" className="text-xs lg:text-base text-[#a6a6a6] mt-5">
                 This system leverages <span className="text-[#f5f5f5]">Vanilla HTML, CSS, and JavaScript</span> for its core functionality, while Flowbite enhances its design and user experience.
               </p>
             </div>
 
 
-            <div className="w-min mt-16 flex cursor-pointer">
+            <div data-aos="zoom-in" data-aos-delay="200" className="w-min mt-16 flex cursor-pointer">
               <div className="rounded-full p-3 border border-[#f5f5f5]">
                 <svg className="size-4 invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
               </div>
@@ -385,14 +385,20 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="lg:col-span-1 hover:grayscale-0 row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-right" data-aos-delay="500"  className="lg:col-span-1 hover:grayscale-0 row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
           </div>
-          <div className="lg:col-span-2 hover:grayscale-0  row-start-2 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452346713_3730404040532485_7027373536140693812_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDRfSpvh4KU1VgAD-cnPh2yJwhxL38BxTInCHEvfwHFPZM3oS2fhBjRehYeyzFnUN3vRYsh-LLqo9-i5RRyjVg&_nc_ohc=0hVjbDlKwRwQ7kNvgF5OCya&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QGpX6x_Cl4Nt9K8ybZjXxUms1D3EoNyxM8fuO7zY8MsDg&oe=66D7B2C9')]">
+          <div data-aos="fade-down" data-aos-delay="500"  className="lg:col-span-2 hover:grayscale-0  row-start-2 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452346713_3730404040532485_7027373536140693812_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDRfSpvh4KU1VgAD-cnPh2yJwhxL38BxTInCHEvfwHFPZM3oS2fhBjRehYeyzFnUN3vRYsh-LLqo9-i5RRyjVg&_nc_ohc=0hVjbDlKwRwQ7kNvgF5OCya&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QGpX6x_Cl4Nt9K8ybZjXxUms1D3EoNyxM8fuO7zY8MsDg&oe=66D7B2C9')]">
 
           </div>
-          <div className="lg:col-span-1 hover:grayscale-0 row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-left" data-aos-delay="500"  className="lg:col-span-1 hover:grayscale-0 row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
             {/* This column will be hidden */}
           </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-4 snap-start h-screen scroll-smooth relative">
+        <div className="absolute z-0 lg:bottom-0 top-0 right-0  py rounded-full lg:w-[600px] lg:h-[600px] h-[400px] w-[400px] -mr-[50px] -mb-[100px] lg:-mr-[100px] lg:-mb-[200px]  border border-[#a6a6a6]">
+
         </div>
       </section>
 
