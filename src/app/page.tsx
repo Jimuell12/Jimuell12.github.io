@@ -105,65 +105,62 @@ export default function Home() {
 
       <section id="about" className="px-4 py-4 snap-start h-screen scroll-smooth">
         <h1>... /About me ...</h1>
-        <h1 className="text-[#a6a6a6] text-center text-xs lg:text-base">Hello! I'm Jimuel Flojera, I'm aspiring <span className="text-[#f5f5f5]">Full-stack Developer.</span></h1>
+        <h1 className="text-[#a6a6a6] text-center text-xs lg:text-base my-2">Hello! I'm Jimuel Flojera, I'm aspiring <span className="text-[#f5f5f5]">Full-stack Developer.</span></h1>
         <div className="grid lg:grid-cols-2 lg:mt-20">
-          <div className="lg:col-span-1 space-y-5">
-            <div className="border border-[#a6a6a6] bg-[#f5f5f5] text-[#121212] font-sans rounded-3xl p-6 lg:max-w-lg">
-              <h1 className="text-base lg:text-xl">Front-end</h1>
-              <br />
+          <div className="lg:col-span-1 space-y-2 lg:space-y-5">
+            <div className="border border-[#a6a6a6] bg-[#f5f5f5] text-[#121212] font-sans rounded-3xl p-4 lg:p-6 lg:max-w-lg">
+              <h1 className="text-sm lg:text-xl mb-2 lg:mb-5">Front-end</h1>
               <span className="text-xs lg:text-base tracking-widest leading-5">TypeScript / React / NextJs / React Native / Vue / Vue / HTML / CSS / JavaScript / Java</span>
             </div>
-            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-6 max-w-xs">
-              <h1 className="text-base lg:text-xl">Styles</h1>
-              <br />
+            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-4 lg:p-6  max-w-xs">
+              <h1 className="text-sm lg:text-xl mb-2 lg:mb-5">Styles</h1>
               <span className="text-xs lg:text-base tracking-widest leading-5">TailwindCSS / AntDesign / FontAwesome / DaisyUI</span>
             </div>
-            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-6 lg:max-w-lg">
-              <h1 className="text-base lg:text-xl">Back-end</h1>
-              <br />
+            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-4 lg:p-6  lg:max-w-lg">
+              <h1 className="text-sm lg:text-xl mb-2 lg:mb-5">Back-end</h1>
               <span className="text-xs lg:text-base tracking-widest leading-5">MySQL / Node / Laravel / PHP / FLASK / Azure</span>
             </div>
           </div>
           <div className="lg:col-span-1">
-            <h1 className="text-right text-3xl lg:text-6xl font-bold mb-10">EXPERIENCES</h1>
-            <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
-              <div className="flex flex-col text-[#a6a6a6]">
+            <h1 className="text-right text-3xl lg:text-6xl font-bold pb-5 pt-5 lg:pb-10 lg:pt-0">EXPERIENCES</h1>
+            <div className="border-[#a6a6a6] border-t px-4 py-2 lg:py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+              <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2023 - 2024</h1>
                 <p>1 year</p>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col items-end text-xs lg:text-base">
                 <h1 className="font-semibold">Freelancing</h1>
-                <span className="text-[#a6a6a6] font-semibold">Back-end Developer | PHP, MySQL, NodeJs</span>
+                <span className="text-[#a6a6a6] font-semibold text-right">Back-end Developer | PHP, MySQL, NodeJs</span>
               </div>
             </div>
             <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
-              <div className="flex flex-col text-[#a6a6a6]">
+              <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>April 2024 - July 2024</h1>
                 <p>3 Months</p>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col items-end text-xs lg:text-base">
                 <h1 className="font-semibold">OJT PROJECT</h1>
-                <span className="text-[#a6a6a6] font-semibold">Developer | Laravel, MySQL, Tailwindcss</span>
+                <span className="text-[#a6a6a6] font-semibold text-right">Developer | Laravel, MySQL, Tailwindcss</span>
               </div>
             </div>
             <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#121212] bg-[#f5f5f5] flex flex-row items-center justify-between">
-              <div className="flex flex-col text-[#a6a6a6]">
+              <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2023 - 2024</h1>
                 <p>6 Months</p>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col items-end text-xs lg:text-base">
                 <h1 className="font-semibold">THESIS PROJECT</h1>
-                <span className="font-semibold">Developer | Flask, AI MODEL, HTML</span>
+                <span className="font-semibold text-right text-[#a6a6a6]">Developer | Flask, AI MODEL, HTML</span>
               </div>
             </div>
             <div className="border-[#a6a6a6] border-y px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
-              <div className="flex flex-col text-[#a6a6a6]">
+              <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2020 - 2024</h1>
                 <p>4 years</p>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col items-end text-xs lg:text-base">
                 <h1 className="font-semibold">SCHOOL PROJECTS</h1>
-                <span className="text-[#a6a6a6] font-semibold">Developer | Android, Web, Desktop</span>
+                <span className="text-[#a6a6a6] font-semibold text-right">Developer | Android, Web, Desktop</span>
               </div>
             </div>
           </div>
@@ -172,11 +169,10 @@ export default function Home() {
 
       <section id="projects" className="px-4 py-4 snap-start h-screen scroll-smooth">
         <h1 className="text-center">... /Projects ...</h1>
-        <div className="grid lg:grid-cols-6 grid-rows-4 gap-4 h-5/6">
-          <div className="lg:col-span-2 row-start-1 row-span-4 p-6 font-sans">
-            <h1 className="font-semibold text-3xl">Alarmnet IMS</h1>
-            <br />
-            <div className="max-w-xs text-[#a6a6a6] text-sm cursor-default">
+        <div className="grid grid-cols-2 lg:grid-cols-6 grid-rows-4 gap-4 h-5/6">
+          <div className="col-span-2 row-start-1 row-span-4 p-6 font-sans">
+            <h1 className="font-semibold text-lg lg:text-3xl mb-2 lg:mb-5">Alarmnet IMS</h1>
+            <div className="max-w-xs text-[#a6a6a6] text-xs lg:text-sm cursor-default">
               <div className="border my-2 mr-1 inline-block items-center hover:text-[#f5f5f5] hover:border-[#f5f5f5] border-[#a6a6a6] py-2 px-4 rounded-full">
                 <p>Laravel</p>
               </div>
@@ -200,7 +196,7 @@ export default function Home() {
               </div>
             </div>
             <br />
-            <div className="text-[#a6a6a6] italic">
+            <div className="text-[#a6a6a6] italic text-xs lg:text-base">
               <span className="text-xs lg:text-base text-[#f5f5f5]">Alarment's IMS</span> - A web-based inventory management system that includes a <span className="text-[#f5f5f5]">purchase order feature for tracking</span> the movement of packages.
               <p className="text-xs lg:text-base text-[#a6a6a6] mt-5">
                 This system leverages <span className="text-[#f5f5f5]">Laravel, MySQL, and Tailwindcss</span> for its core functionality, while Flowbite enhances its design and user experience.
@@ -208,24 +204,26 @@ export default function Home() {
             </div>
 
 
-            <div className="w-min mt-16 flex">
+            <div className="w-min mt-5 lg:mt-16 flex">
               <div className="rounded-full p-3 border border-[#f5f5f5]">
-                <svg className="size-5 invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
+                <svg className="size-4 invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" /></svg>
               </div>
-              <div className="rounded-full p-3 -ml-4 border bg-[#a6a6a6]">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="size-4 stroke-[#3d3d3d]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                </svg>
-              </div>
+              <a href="#" className="cursor-default">
+                <div className="rounded-full p-3 -ml-4 border bg-[#a6a6a6]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="size-4 stroke-[#3d3d3d]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
+              </a>
             </div>
 
           </div>
-          <div className="lg:col-span-1 hover:grayscale-0 row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+          <div className="hover:grayscale-0 row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
           </div>
-          <div className="lg:col-span-2 hover:grayscale-0  row-start-2 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/453456077_954375150036736_5737758718517499147_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5EE4_PN3z7bB-fW88sTeWXJ_I1GaUoiZcn8jUZpSiJiQAoNhdIYeMfUbzZF02cneaC09j9PEHGWGGoBXib4Cr&_nc_ohc=CP3VEEtP2PUQ7kNvgF00vwj&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEvwG9hLmrylA7A5NGoYqXklpNVKl-68RUeEXroLc7Vcw&oe=66D6161F')]">
+          <div className="col-span-2 hover:grayscale-0  row-start-2 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/453456077_954375150036736_5737758718517499147_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5EE4_PN3z7bB-fW88sTeWXJ_I1GaUoiZcn8jUZpSiJiQAoNhdIYeMfUbzZF02cneaC09j9PEHGWGGoBXib4Cr&_nc_ohc=CP3VEEtP2PUQ7kNvgF00vwj&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEvwG9hLmrylA7A5NGoYqXklpNVKl-68RUeEXroLc7Vcw&oe=66D6161F')]">
 
           </div>
-          <div className="lg:col-span-1 hover:grayscale-0 row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+          <div className="col-span-1 hidden lg:flex hover:grayscale-0 row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             {/* This column will be hidden */}
           </div>
         </div>
@@ -357,7 +355,7 @@ export default function Home() {
                 <h1 className="text-5xl lg:text-8xl font-bold">Flojera</h1>
               </div>
             </div>
-            <div className="lg:col-span-2 mb-20 max-w-sm self-end">
+            <div className="lg:col-span-2 mb-20 justify-self-end">
               <div className="flex justify-between">
                 <a href="/">Home</a>
                 <a href="/#about">About</a>
@@ -367,7 +365,7 @@ export default function Home() {
                 <h1 className="text-xl">Site</h1>
                 <br />
                 <p className="text-base tracking-widest leading-5 text-[#f5f5f5]">Created by Jimuel Flojera /</p>
-                <p className="text-base tracking-widest leading-5 text-[#f5f5f5] pt-2">Hosted by Github Pages /</p>
+                <p className="text-base tracking-widest leading-5 text-[#f5f5f5] pt-2">Hosted with Github Pages /</p>
                 <p className="text-base tracking-widest leading-5 text-[#f5f5f5] pt-2">Powered by NextJs /</p>
               </div>
             </div>
