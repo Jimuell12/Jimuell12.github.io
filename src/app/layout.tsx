@@ -16,8 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="acid" lang="en">
-      <body className={`${montserrat.className} dark:bg-[#121212] overflow-x-hidden`}>
-        <div className=" w-full flex flex-col min-h-screen text-[#121212] dark:text-[#f5f5f5]">
+      <body className={`${montserrat.className} bg-[#121212] overflow-hidden`}>
+        <div className=" w-full flex flex-col min-h-screen text-[#f5f5f5]">
           {children}
         </div>
       </body>

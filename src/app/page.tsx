@@ -167,9 +167,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="px-4 py-4 snap-start h-screen scroll-smooth">
+      <section id="projects" className="px-4 py-4 snap-start h-screen scroll-smooth relative">
+      <div className="absolute z-0 lg:bottom-0 top-0 right-0  py rounded-full lg:w-[600px] lg:h-[600px] h-[400px] w-[400px] -mr-[50px] -mb-[100px] lg:-mr-[100px] lg:-mb-[200px]  border border-[#a6a6a6]">
+
+      </div>
         <h1 className="text-center">... /Projects ...</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-6 grid-rows-4 gap-4 h-5/6">
+        <div className="grid grid-cols-2 lg:grid-cols-6 grid-rows-4 gap-4 h-5/6 relative z-10">
           <div className="col-span-2 row-start-1 row-span-4 p-6 font-sans">
             <h1 className="font-semibold text-lg lg:text-3xl mb-2 lg:mb-5">Alarmnet IMS</h1>
             <div className="max-w-xs text-[#a6a6a6] text-xs lg:text-sm cursor-default">
@@ -229,8 +232,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-4 snap-start h-screen scroll-smooth">
-        <div className="grid lg:grid-cols-6 grid-rows-4 gap-4 h-5/6 mt-10">
+      <section className="px-4 py-4 snap-start h-screen scroll-smooth relative">
+        <div className="absolute z-0 lg:bottom-0 top-0 left-0  py rounded-full lg:w-[800px] lg:h-[800px] h-[400px] w-[400px] -ml-[50px] -mb-[100px] lg:-ml-[100px] lg:-mb-[200px]  border border-[#a6a6a6]">
+
+        </div>
+        <div className="grid lg:grid-cols-6 grid-rows-4 gap-4 h-5/6 mt-10 relative z-10">
           <div className="lg:col-span-1 hover:grayscale-0 row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
           </div>
           <div className="lg:col-span-2 hover:grayscale-0  row-start-2 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-no-repeat bg-[#3d3d3d] bg-[url('https://scontent.xx.fbcdn.net/v/t1.15752-9/453704514_802289732114480_9141762149386848360_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFjPe7Jbec8cw7jkqtdYhNe16oCKwsbZ_LXqgIrCxtn8m4LO-x6SqZqOBxNEOeCTQta-x7UTgz6gfddhOeBjOox&_nc_ohc=41ZL40UMtyMQ7kNvgGStxq4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFPbXXB3U0z9UhOV_XJcvFCnNcNLc4Uf2v9aNAF9wgL2Q&oe=66D5FFAD')]">
@@ -285,8 +291,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-4 snap-start h-screen scroll-smooth">
-        <div className="grid lg:grid-cols-6 grid-rows-4 gap-4 h-5/6 mt-10">
+      <section className="px-4 py-4 snap-start h-screen scroll-smooth relative">
+        <div className="absolute z-0 lg:bottom-0 top-0 right-0  py rounded-full lg:w-[600px] lg:h-[600px] h-[400px] w-[400px] -mr-[50px] -mb-[100px] lg:-mr-[100px] lg:-mb-[200px]  border border-[#a6a6a6]">
+
+        </div>
+        <div className="grid lg:grid-cols-6 grid-rows-4 gap-4 h-5/6 mt-10 relative z-10">
           <div className="lg:col-span-2 row-start-1 row-span-4 p-6 font-sans">
             <h1 className="font-semibold text-3xl">HVSA</h1>
             <br />
@@ -342,6 +351,9 @@ export default function Home() {
       </section>
 
       <section id="contact" className="px-4 py-4 snap-start h-screen scroll-smooth relative">
+        <div className="absolute lg:bottom-0 top-0 left-0 py rounded-full lg:w-[800px] lg:h-[800px] h-[400px] w-[400px] -ml-[50px] -mb-[100px] lg:-ml-[100px] lg:-mb-[200px]  border border-[#a6a6a6]">
+
+        </div>
         <div className="absolute bottom-0 left-0 py-6 w-full px-6">
           <h1 className="text-end">... /Contacts ...</h1>
           <div className="grid lg:grid-cols-5 mt-20 gap-10">
