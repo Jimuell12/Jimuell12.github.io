@@ -106,22 +106,65 @@ export default function Home() {
       <section id="about" className="px-4 py-4 snap-start h-screen scroll-smooth">
         <h1>... /About me ...</h1>
         <h1 className="text-[#a6a6a6] text-center">Hello! I'm Jimuel Flojera, I'm aspiring <span className="text-[#f5f5f5]">Full-stack Developer.</span></h1>
-        <div className="grid lg:grid-cols-2 lg:mt-10">
+        <div className="grid lg:grid-cols-2 lg:mt-20">
           <div className="lg:col-span-1 space-y-5">
-            <div className="border border-[#a6a6a6] text-[#a6a6a6] font-sans rounded-3xl p-6 max-w-lg">
+            <div className="border border-[#a6a6a6] bg-[#f5f5f5] text-[#121212] font-sans rounded-3xl p-6 max-w-lg">
               <h1 className="text-xl">Front-end</h1>
               <br />
               <span className="text-base tracking-widest leading-5">TypeScript / React / NextJs / React Native / Vue / Vue / HTML / CSS / JavaScript / Java</span>
             </div>
-            <div className="border border-[#a6a6a6] text-[#a6a6a6] font-sans rounded-3xl p-6 max-w-xs">
+            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-6 max-w-xs">
               <h1 className="text-xl">Styles</h1>
               <br />
               <span className="text-base tracking-widest leading-5">TailwindCSS / AntDesign / FontAwesome / DaisyUI</span>
             </div>
-            <div className="border border-[#a6a6a6] text-[#a6a6a6] font-sans rounded-3xl p-6 max-w-lg">
+            <div className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-6 max-w-lg">
               <h1 className="text-xl">Back-end</h1>
               <br />
               <span className="text-base tracking-widest leading-5">MySQL / Node / Laravel / PHP / FLASK / Azure</span>
+            </div>
+          </div>
+          <div className="lg:col-span-1">
+            <h1 className="text-right text-6xl font-bold mb-10">EXPERIENCES</h1>
+            <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+              <div className="flex flex-col text-[#a6a6a6]">
+                <h1>2023 - 2024</h1>
+                <p>1 year</p>
+              </div>
+              <div className="flex flex-col items-end">
+                <h1 className="font-semibold">Freelancing</h1>
+                <span className="text-[#a6a6a6] font-semibold">Back-end Developer | PHP, MySQL, NodeJs</span>
+              </div>
+            </div>
+            <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#a6a6a6] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+              <div className="flex flex-col text-[#a6a6a6]">
+                <h1>April 2024 - July 2024</h1>
+                <p>3 Months</p>
+              </div>
+              <div className="flex flex-col items-end">
+                <h1 className="font-semibold">OJT PROJECT</h1>
+                <span className="text-[#a6a6a6] font-semibold">Developer | Laravel, MySQL, Tailwindcss</span>
+              </div>
+            </div>
+            <div className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#121212] bg-[#f5f5f5] flex flex-row items-center justify-between">
+              <div className="flex flex-col text-[#a6a6a6]">
+                <h1>2023 - 2024</h1>
+                <p>6 Months</p>
+              </div>
+              <div className="flex flex-col items-end">
+                <h1 className="font-semibold">THESIS PROJECT</h1>
+                <span className="font-semibold">Developer | Flask, AI MODEL, HTML</span>
+              </div>
+            </div>
+            <div className="border-[#a6a6a6] border-y px-4 py-4 text-sm text-[#a6a6a6] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+              <div className="flex flex-col text-[#a6a6a6]">
+                <h1>2020 - 2024</h1>
+                <p>4 years</p>
+              </div>
+              <div className="flex flex-col items-end">
+                <h1 className="font-semibold">SCHOOL PROJECTS</h1>
+                <span className="text-[#a6a6a6] font-semibold">Developer | Android, Web, Desktop</span>
+              </div>
             </div>
           </div>
         </div>
