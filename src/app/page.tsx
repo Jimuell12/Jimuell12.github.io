@@ -8,6 +8,12 @@ export default function Home() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    checkEmail(email);
+    if(email === ''){
+      alert('Please enter your email address');
+    }else {
+      alert('Thank you for subscribing!');
+    }
 
     const formData = new FormData(e.target);
     formData.append('subject', "You've Subscribed!");
@@ -34,6 +40,13 @@ export default function Home() {
       console.error('Failed to send email:', data.error);
     }
   };
+
+  const checkEmail = (email: string) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address');
+    }
+  }
 
   return (
     <section className="snap-y snap-mandatory h-screen w-screen mx-auto container overflow-y-scroll scroll-smooth no-scrollbar overflow-x-hidden">
