@@ -46,10 +46,11 @@ export async function POST(request) {
       html: html
     };
 
-    // Send email
-    await sendMail(mailOptions);
+    // Send email and await the result
+    const result = await sendMail(mailOptions);
+    console.log('Email sent:', result);
 
-    // Return a success response
+    // Return a success response after the email is sent
     return NextResponse.json({ message: 'Email sent successfully' });
 
   } catch (error) {
