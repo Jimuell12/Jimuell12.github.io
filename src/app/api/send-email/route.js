@@ -34,10 +34,7 @@ export async function POST(request) {
       html: html
     };
 
-    await new Promise((resolve, reject) => {
-      // send mail
-      transporter.sendMail(mailOptions);
-    });
+    await transporter.sendMail(mailOptions);
 
     // Return a success response
     return {};
