@@ -9,7 +9,7 @@ export async function POST(request) {
 
     // Extract form data
     const formData = await request.formData();
-    const name = "Jimuel Flojera"
+    const name = "Jimuel Flojera";
     const email = formData.get('email');
     const subject = formData.get('subject');
     const html = formData.get('html');
@@ -26,7 +26,19 @@ export async function POST(request) {
       },
     });
 
-    // Send email
+    // Send email function
+    const sendMail = async (mailOptions) => {
+      return new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, (error, info) => {
+          if (error) {
+            return reject(error);
+          }
+          resolve(info);
+        });
+      });
+    };
+
+    // Mail options
     const mailOptions = {
       from: `"${name}" <${myEmail}>`,
       to: email,
@@ -34,7 +46,8 @@ export async function POST(request) {
       html: html
     };
 
-    await transporter.sendMail(mailOptions);
+    // Send email
+    await sendMail(mailOptions);
 
     // Return a success response
     return NextResponse.json({ message: 'Email sent successfully' });
