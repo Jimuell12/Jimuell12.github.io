@@ -18,40 +18,42 @@ export default function Home() {
     });
   }, []);
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    checkEmail(email);
     if (email === '') {
       alert('Please enter your email address');
-    } else {
-      alert('Thank you for subscribing!');
+      return;
     }
 
-    const formData = new FormData(e.target);
-    formData.append('subject', "You've Subscribed!");
-    formData.append('html', `
-      <div style="font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #121212; border: 1px solid #ddd; border-radius: 8px;">
-        <h2 style="color: #f5f5f5;">Subscription Successful!</h2>
-        <p style="color: #a6a6a6;">Thank you for subscribing to the newsletter of <strong>Jimuel Flojera</strong>, your future Full Stack Developer.</p>
-        <p style="color: #a6a6a6;">You'll now receive the latest updates and insights directly to your inbox.</p>
-        <p style="margin-top: 20px; font-size: 0.9em; color: #a6a6a6;">Visit my portfolio at <a href="https://yourportfolio.url" style="color: #f5f5f5; text-decoration: none;">Jimuel Flojera</a></p>
-      </div>
-    `);
-
-
-    const res = await fetch('/api/send-email', {
-      method: 'post',
-      body: formData,
+    const response = await fetch('https://jimflojera.pythonanywhere.com/send_email?', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        to: email,
+        subject: "You've Subscribed!",
+        html_body: `
+                <div style="font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #121212; border: 1px solid #ddd; border-radius: 8px;">
+                    <h2 style="color: #f5f5f5;">Subscription Successful!</h2>
+                    <p style="color: #a6a6a6;">Thank you for subscribing to the newsletter of <strong>Jimuel Flojera</strong>, your future Full Stack Developer.</p>
+                    <p style="color: #a6a6a6;">You'll now receive the latest updates and insights directly to your inbox.</p>
+                    <p style="margin-top: 20px; font-size: 0.9em; color: #a6a6a6;">Visit my portfolio at <a href="https://yourportfolio.url" style="color: #f5f5f5; text-decoration: none;">Jimuel Flojera</a></p>
+                </div>
+            `,
+      }),
     });
 
-    const data = await res.json();
+    const data = await response.json();
 
-    if (data.message) {
-      console.log('Email sent successfully!');
+    if (data.status === 'success') {
+      alert('Thank you for subscribing!');
     } else {
-      console.error('Failed to send email:', data.error);
+      console.error('Failed to send email:', data.message);
     }
   };
+
+
 
   const checkEmail = (email: string) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -342,7 +344,7 @@ export default function Home() {
 
         </div>
         <div className="grid lg:grid grid-cols-6 lg:grid-cols-6 lg:grid-rows-4 grid-rows-7 gap-4 h-5/6 mt-10 relative z-10">
-            <div className="lg:col-span-2 lg:row-start-1 lg:row-span-4 col-span-6 row-start-1 row-span-4 p-6 font-sans">
+          <div className="lg:col-span-2 lg:row-start-1 lg:row-span-4 col-span-6 row-start-1 row-span-4 p-6 font-sans">
             <h1 data-aos="zoom-in" className="font-semibold text-3xl">HVSA</h1>
             <br />
             <div className="max-w-xs text-[#a6a6a6] text-sm cursor-default">
@@ -385,12 +387,12 @@ export default function Home() {
             </div>
 
           </div>
-          <div data-aos="flip-right" data-aos-delay="500"  className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
           </div>
-            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452346713_3730404040532485_7027373536140693812_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDRfSpvh4KU1VgAD-cnPh2yJwhxL38BxTInCHEvfwHFPZM3oS2fhBjRehYeyzFnUN3vRYsh-LLqo9-i5RRyjVg&_nc_ohc=0hVjbDlKwRwQ7kNvgF5OCya&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QGpX6x_Cl4Nt9K8ybZjXxUms1D3EoNyxM8fuO7zY8MsDg&oe=66D7B2C9')]">
+          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452346713_3730404040532485_7027373536140693812_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDRfSpvh4KU1VgAD-cnPh2yJwhxL38BxTInCHEvfwHFPZM3oS2fhBjRehYeyzFnUN3vRYsh-LLqo9-i5RRyjVg&_nc_ohc=0hVjbDlKwRwQ7kNvgF5OCya&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QGpX6x_Cl4Nt9K8ybZjXxUms1D3EoNyxM8fuO7zY8MsDg&oe=66D7B2C9')]">
 
           </div>
-          <div data-aos="flip-left" data-aos-delay="500"  className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-left" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
 
           </div>
         </div>
