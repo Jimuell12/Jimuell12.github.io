@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <form data-aos="fade-right" onSubmit={handleSubmit} className="py-2 lg:p-6 self-start lg:self-center justify-self-end w-full lg:w-min">
+            <form data-aos="fade-right" onSubmit={handleSubmit} method="post" className="py-2 lg:p-6 self-start lg:self-center justify-self-end w-full lg:w-min">
               <div className="gap-2 rounded-full justify-between border-black dark:border-white flex text-[#121212]">
                 <div className="bg-[#f5f5f5] font-sans px-4 py-2 border rounded-full justify-end w-full lg:w-[300px]">
                   <input name="email" onChange={(e) => setEmail(e.target.value)} className="bg-[#f5f5f5] italic w-full text-base lg:text-base outline-none dark:text-[#121212] placeholder:text-[#121212] dark:placeholder:text-[#121212]" type="text" placeholder="Subscribe" />
