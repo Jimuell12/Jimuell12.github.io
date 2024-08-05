@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="acid" lang="en">
-      <body className={`${montserrat.className} bg-[#121212] overflow-hidden`}>
+    <html lang="en">
+      <body className={`${montserrat.className} bg-[#121212] no-scrollbar`}>
         <div className=" w-full flex flex-col min-h-screen text-[#f5f5f5]">
           {children}
         </div>
