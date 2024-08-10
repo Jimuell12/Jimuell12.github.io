@@ -271,7 +271,7 @@ export default function Home() {
             </div>
             <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             </div>
-            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/tastebuds.png')]">
+            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/alarmnet.png')]">
 
             </div>
             <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
@@ -289,7 +289,7 @@ export default function Home() {
           <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-start-2 row-span-3 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
 
           </div>
-          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-1 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.xx.fbcdn.net/v/t1.15752-9/453704514_802289732114480_9141762149386848360_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFjPe7Jbec8cw7jkqtdYhNe16oCKwsbZ_LXqgIrCxtn8m4LO-x6SqZqOBxNEOeCTQta-x7UTgz6gfddhOeBjOox&_nc_ohc=41ZL40UMtyMQ7kNvgGStxq4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFPbXXB3U0z9UhOV_XJcvFCnNcNLc4Uf2v9aNAF9wgL2Q&oe=66D5FFAD')]">
+          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-1 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.xx.fbcdn.net/v/t1.15752-9/453704514_802289732114480_9141762149386848360_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFjPe7Jbec8cw7jkqtdYhNe16oCKwsbZ_LXqgIrCxtn8m4LO-x6SqZqOBxNEOeCTQta-x7UTgz6gfddhOeBjOox&_nc_ohc=41ZL40UMtyMQ7kNvgGStxq4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFPbXXB3U0z9UhOV_XJcvFCnNcNLc4Uf2v9aNAF9wgL2Q&oe=66D5FFAD')]">
 
           </div>
           <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-1 lg:row-span-3 col-span-2 row-start-3 row-span-1 p-2 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://img.freepik.com/premium-photo/sunrise-view-from-bedroom-house-window-with-curtains-anime-background-clovers-style_137717-284.jpg')]">
