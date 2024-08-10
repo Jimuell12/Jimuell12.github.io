@@ -109,7 +109,7 @@ export default function Home() {
             </form>
           </div>
           <div data-aos="zoom-out" className="p-2 lg:p-6 lg:col-span-2 overflow-hidden shadow-white drop-shadow-xl">
-            <img className="w-80 h-80 hover:grayscale-0 fancy-border drop-shadow-xl shadow-black dark:shadow-white" src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/251632721_3167651810149522_1738373366806811130_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH1JIgndUQ7kivJBWM5faWTfXbJ_lMMWap9dsn-UwxZqvUmXiqYMzsTPsAdGwkEOgKtbCiJKhdEBCaE-zOEfTHm&_nc_ohc=O-jMg-CmZw4Q7kNvgEqVM4j&_nc_ht=scontent.fmnl17-3.fna&oh=00_AYDEGbHMM51VUH92eB5TVNvpWZIOjetQBB3fPvuXbNPNCQ&oe=66B0DF07" alt="" />
+            <img className="w-80 h-80 hover:grayscale-0 fancy-border drop-shadow-xl shadow-black dark:shadow-white" src="/images/profile.png" alt="" />
           </div>
         </div>
         <div className="flex-col space-y-2 flex lg:flex-row justify-evenly text-xs lg:text-base mt-5 lg:mt-10">
@@ -271,7 +271,7 @@ export default function Home() {
             </div>
             <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             </div>
-            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/453456077_954375150036736_5737758718517499147_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG5EE4_PN3z7bB-fW88sTeWXJ_I1GaUoiZcn8jUZpSiJiQAoNhdIYeMfUbzZF02cneaC09j9PEHGWGGoBXib4Cr&_nc_ohc=CP3VEEtP2PUQ7kNvgF00vwj&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1QEvwG9hLmrylA7A5NGoYqXklpNVKl-68RUeEXroLc7Vcw&oe=66D6161F')]">
+            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/tastebuds.png')]">
 
             </div>
             <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
@@ -390,7 +390,7 @@ export default function Home() {
           </div>
           <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
           </div>
-          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452346713_3730404040532485_7027373536140693812_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDRfSpvh4KU1VgAD-cnPh2yJwhxL38BxTInCHEvfwHFPZM3oS2fhBjRehYeyzFnUN3vRYsh-LLqo9-i5RRyjVg&_nc_ohc=0hVjbDlKwRwQ7kNvgF5OCya&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QGpX6x_Cl4Nt9K8ybZjXxUms1D3EoNyxM8fuO7zY8MsDg&oe=66D7B2C9')]">
+          <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('/images/hvsa.png')]">
 
           </div>
           <div data-aos="flip-left" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
@@ -404,12 +404,12 @@ export default function Home() {
 
         </div>
         <div className="relative z-10">
-          <h1 data-aos="zoom-in" className="text-start my-2">... /Other Projects ...</h1>
+          <h1 data-aos="zoom-in" className="text-center my-2">... /Other Projects ...</h1>
           <div className="grid lg:grid-cols-3 gap-5 font-sans">
 
             <div data-aos="fade-left" data-aos-delay="500" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg')]">
-                <img className="w-full h-full object-contain" src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/453469717_342143482296820_4226564615105196448_n.png?stp=dst-png_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGpUFDFWwvdXAURTSyETqQtu1-JIDzIaNO7X4kgPMho0wpZt7U46HUmgSzv2CPhUC6PVEx16LxxyU-TN4_KL6fm&_nc_ohc=_iCADO4AMasQ7kNvgGm5s9J&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1QHWJgfaSXNnYZU-DbKHn6MQL2sYUDzwLgl6S5pupnbczw&oe=66D84F9A" alt="" />
+                <img className="w-full h-full object-contain" src="/images/recifind.png" alt="" />
               </div>
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
@@ -423,7 +423,7 @@ export default function Home() {
 
             <div data-aos="fade-left" data-aos-delay="700" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212] flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://media.istockphoto.com/id/1279701336/vector/phone-with-app-alarm-clock-on-the-screen.jpg?s=612x612&w=0&k=20&c=2QwKQyXKVbZaMK6jjpaaQ5UUw62VcVw6VngFCIQDXmM=')]">
-                <img className="w-full h-full object-contain" src="https://scontent.fmnl17-6.fna.fbcdn.net/v/t1.15752-9/452296607_858528729540455_7443192680488425142_n.png?stp=dst-png_s1080x2048&_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFXfWYJ7teuTbKvtb9tUO4QYbQA1FTMt2VhtADUVMy3Zbfhq6i3ncaKx-0KPOHh59hFwEabQwSM-N9AnFJh9cPu&_nc_ohc=kd9OR3hBAr4Q7kNvgFdtx7w&_nc_ht=scontent.fmnl17-6.fna&oh=03_Q7cD1QHL3rwQ2EtVc8ewUp3Ql_zI_jWVmjr5ZlF97FEe0cCJOA&oe=66D88310" alt="Image description" />
+                <img className="w-full h-full object-contain" src="/images/remindme.png" alt="Image description" />
               </div>
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
@@ -438,7 +438,7 @@ export default function Home() {
 
             <div data-aos="fade-left" data-aos-delay="900" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212]">
               <div className="h-60 rounded-3xl bg-[url('https://img.freepik.com/free-vector/blur-pink-blue-abstract-gradient-background-vector_53876-174836.jpg')]">
-                <img className="w-full h-full object-contain scale-x-[-1]" src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/449860516_1760406804492148_4362601071039468395_n.png?stp=dst-png_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGzWkDrYEqG50HnSjT4SOZ73MauoLyWXPjcxq6gvJZc-KDMLgzDbsd4bjK32NWva5YqRoEQINFDGhXAlq8-EKk-&_nc_ohc=HmgiiTBGDHIQ7kNvgEE6cLA&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1QHNK-pwKbb8WZgCfSnmuR8MSvPeGXJgLkdM2yjgoy4_Hw&oe=66D85425" alt="" />
+                <img className="w-full h-full object-contain scale-x-[-1]" src="/images/tastebuds.png" alt="" />
               </div>
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
