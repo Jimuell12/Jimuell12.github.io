@@ -99,12 +99,12 @@ export default function Home() {
   return (
     <section className="mt-10 lg:mt-32 w-screen lg:mx-auto lg:container overflow-y-scroll scroll-smooth no-scrollbar overflow-x-hidden">
       <Particles
-        className="fixed bottom-0 inset-0 -z-10 w-full h-full"
-        quantity={500}
+        className="fixed inset-0 -z-10 w-full h-full"
+        quantity={300}
         ease={80}
         color={'#f5f5f5'}
         refresh
-        size={0.8}
+        size={0.5}
       />
       <section className="px-4 snap-start h-screen">
         <Navbar />
