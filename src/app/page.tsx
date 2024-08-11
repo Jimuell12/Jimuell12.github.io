@@ -482,7 +482,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">RemindMe</h1>
                   <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">RemindMe is a Pomodoro timer app that enhances your productivity with </p>
-                  <span className="text-xs italic">integrated alarms to notify you precisely when it's time to switch tasks.</span>
+                  <span className="text-xs lg:text-base italic">integrated alarms to notify you precisely when it's time to switch tasks.</span>
                   <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> Designed to help you stay focused and manage your time effectively, RemindMe ensures you maintain a productive rhythm throughout your day.</span>
                 </div>
                 <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Java / XML</p>
@@ -498,7 +498,7 @@ export default function Home() {
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">TasteBuds</h1>
                   <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">Tastebud is an innovative app that utilizes</p>
-                  <span className="text-xs italic">facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
+                  <span className="text-xs lg:text-base italic">facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
                   <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> By analyzing the user's facial expressions, Tastebud provides insights into their taste preferences. Whether you’re experimenting with new flavors or just curious about taste reactions, Tastebud offers a unique way to understand and enjoy your food experiences. </span>
                   <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Object Detection / Image Classification / Text Classification / Java / TensorFlow Lite / XML </p>
                 </div>
