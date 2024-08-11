@@ -3,8 +3,41 @@ import { useEffect, useState } from "react";
 import Navbar from "./header";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Typewriter from 'typewriter-effect';
+import WordRotate from "@/components/magicui/word-rotate";
+import Particles from "@/components/magicui/particles";
+import IconCloud from "@/components/magicui/icon-cloud";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "laravel",
+  "react",
+  "python",
+  "nodejs",
+  "tailwindcss",
+  "antdesign",
+  "fontawesome",
+  "daisyui",
+  "mysql",
+  "flask",
+  "nextdotjs",
+  "android",
+  "html5",
+  "css3",
+  "firebase",
+  "nginx",
+  "vercel",
+  "git",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "figma",
+];
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -64,30 +97,28 @@ export default function Home() {
   }
 
   return (
-    <section className=" w-screen mx-auto container overflow-y-scroll scroll-smooth no-scrollbar overflow-x-hidden">
+    <section className="mt-10 lg:mt-32 w-screen lg:mx-auto lg:container overflow-y-scroll scroll-smooth no-scrollbar overflow-x-hidden">
+      <Particles
+        className="fixed bottom-0 inset-0 -z-10 w-full h-full"
+        quantity={500}
+        ease={80}
+        color={'#f5f5f5'}
+        refresh
+        size={0.8}
+      />
       <section className="px-4 snap-start h-screen">
         <Navbar />
         <div className="grid lg:grid-cols-6 flex-1 lg:mt-10">
           <div className="p-2 lg:p-6 lg:col-span-4 flex flex-col justify-between">
             <div className="">
-              <div data-aos="fade-right" className="text-4xl cursor-default lg:text-7xl tracking-wide font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
-                <Typewriter
-                  options={{
-                    strings: ['Web/Mobile'],
-                    autoStart: true,
-                    delay: 200,
-                    loop: true,
-                  }}
+              <div data-aos="fade-right">
+
+                <WordRotate
+                  className="text-4xl cursor-default lg:text-7xl tracking-wide font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent"
+                  words={["Website", "Native Mobile", "Desktop", "Full-stack"]}
                 />
                 <div className="text-right">
-                  <Typewriter
-                    options={{
-                      strings: ['Developer'],
-                      autoStart: true,
-                      delay: 200,
-                      loop: true,
-                    }}
-                  />
+                  <h1 className="text-4xl cursor-default lg:text-7xl tracking-wide font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">Developer</h1>
                 </div>
               </div>
               <br />
@@ -98,7 +129,7 @@ export default function Home() {
               </div>
             </div>
             <form data-aos="fade-right" onSubmit={handleSubmit} className="py-2 lg:p-6 self-start lg:self-center justify-self-end w-full lg:w-min">
-              <div className="gap-2 rounded-full justify-between border-black dark:border-white flex text-[#121212]">
+              <div className="gap-2 rounded-full items-center justify-between border-black dark:border-white flex text-[#121212]">
                 <div className="bg-[#f5f5f5] font-sans px-4 py-2 border rounded-full justify-end w-full lg:w-[300px]">
                   <input name="email" onChange={(e) => setEmail(e.target.value)} className="bg-[#f5f5f5] italic w-full text-base lg:text-base outline-none dark:text-[#121212] placeholder:text-[#121212] dark:placeholder:text-[#121212]" type="text" placeholder="Subscribe" />
                 </div>
@@ -108,9 +139,13 @@ export default function Home() {
               </div>
             </form>
           </div>
-          <div data-aos="zoom-out" className="p-2 lg:p-6 lg:col-span-2 overflow-hidden shadow-white drop-shadow-xl">
-            <img className="w-80 h-80 hover:grayscale-0 fancy-border drop-shadow-xl shadow-black dark:shadow-white" src="/images/profile.png" alt="" />
+          <div data-aos="zoom-out" className="relative p-2 lg:p-6 lg:col-span-2 overflow-hidden shadow-white drop-shadow-xl items-center">
+            <div className="relative w-80 h-80">
+              <img className="w-full h-full hover:grayscale-0 fancy-border drop-shadow-xl shadow-black dark:shadow-white" src="/images/profile.png" alt="" />
+              <BorderBeam size={500} borderWidth={4} className="fancy-border w-full h-full absolute top-0 left-0" />
+            </div>
           </div>
+
         </div>
         <div className="flex-col space-y-2 flex lg:flex-row justify-evenly text-xs lg:text-base mt-5 lg:mt-10">
           <div data-aos="fade-left" data-aos-delay="500" className="flex flex-row gap-2 lg:gap-5">
@@ -153,11 +188,11 @@ export default function Home() {
       <section id="about" className="px-4 py-4 snap-start h-screen scroll-smooth">
         <h1 data-aos="fade-down" className="aos">... /About me ...</h1>
         <h1 data-aos="zoom-in" className="text-[#a6a6a6] text-center text-xs lg:text-base my-2">Hello! I'm Jimuel Flojera, I'm aspiring <span className="text-[#f5f5f5]">Full-stack Developer.</span></h1>
-        <div className="grid lg:grid-cols-2 lg:mt-20">
+        <div className="grid lg:grid-cols-2 lg:mt-10 items-center">
           <div className="lg:col-span-1 space-y-2 lg:space-y-5">
             <div data-aos="fade-right" className="border border-[#a6a6a6] bg-[#f5f5f5] text-[#121212] font-sans rounded-3xl p-4 lg:p-6 lg:max-w-lg">
               <h1 className="text-sm lg:text-xl mb-2 lg:mb-5">Front-end</h1>
-              <span className="text-xs lg:text-base tracking-widest leading-5">TypeScript / React / NextJs / React Native / Vue / Vue / HTML / CSS / JavaScript / Java</span>
+              <span className="text-xs lg:text-base tracking-widest leading-5">TypeScript / React / NextJs / React Native / Vue / HTML / CSS / JavaScript / Java</span>
             </div>
             <div data-aos="fade-left" className="border border-[#a6a6a6] text-[#a6a6a6] hover:bg-[#f5f5f5] hover:text-[#121212] font-sans rounded-3xl p-4 lg:p-6  max-w-xs">
               <h1 className="text-sm lg:text-xl mb-2 lg:mb-5">Styles</h1>
@@ -168,9 +203,26 @@ export default function Home() {
               <span className="text-xs lg:text-base tracking-widest leading-5">MySQL / Node / Laravel / PHP / FLASK / Azure</span>
             </div>
           </div>
-          <div className="lg:col-span-1 font-sans">
-            <h1 data-aos="fade-left" className="text-right text-3xl lg:text-6xl font-bold pb-5 pt-5 lg:pb-10 lg:pt-0">EXPERIENCES</h1>
-            <div data-aos="flip-right" data-aos-duration="2000" className="border-[#a6a6a6] border-t px-4 py-2 lg:py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+          <div data-aos="fade-left" data-aos-delay="1000" className="lg:col-span-1 font-sans p-4">
+            <div className="border border-[#f5f5f5] bg-gradient-to-t from-blue-200 to-white rounded-3xl">
+              <IconCloud iconSlugs={slugs} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" className="px-4 py-4 h-screen scroll-smooth">
+        <h1 data-aos="fade-down" className="text-center">... /My experiences ...</h1>
+        <div className="grid lg:grid-cols-2 lg:mt-10 items-center gap-2">
+          <div className="lg:col-span-1 relative items-center">
+          <VelocityScroll
+            text="Experiences"
+            default_velocity={5}
+            className="font-display text-center text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm"
+          />
+          </div>
+          <div className="lg:col-span-1 space-y-2 lg:space-y-5">
+            <div data-aos="flip-right" data-aos-delay="500" className="border-[#a6a6a6] border-t px-4 py-2 lg:py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
               <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2023 - 2024</h1>
                 <p>1 year</p>
@@ -180,7 +232,7 @@ export default function Home() {
                 <span className="text-[#a6a6a6] font-semibold text-right">Back-end Developer | PHP, MySQL, NodeJs</span>
               </div>
             </div>
-            <div data-aos="flip-left" data-aos-duration="2000" className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+            <div data-aos="flip-left" data-aos-delay="600" className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
               <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>April 2024 - July 2024</h1>
                 <p>3 Months</p>
@@ -190,7 +242,7 @@ export default function Home() {
                 <span className="text-[#a6a6a6] font-semibold text-right">Developer | Laravel, MySQL, Tailwindcss</span>
               </div>
             </div>
-            <div data-aos="flip-right" data-aos-duration="2000" className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#121212] bg-[#f5f5f5] flex flex-row items-center justify-between">
+            <div data-aos="flip-right" data-aos-delay="700" className="border-[#a6a6a6] border-t px-4 py-4 text-sm text-[#121212] bg-[#f5f5f5] flex flex-row items-center justify-between">
               <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2023 - 2024</h1>
                 <p>6 Months</p>
@@ -200,7 +252,7 @@ export default function Home() {
                 <span className="font-semibold text-right text-[#a6a6a6]">Developer | Flask, AI MODEL, HTML</span>
               </div>
             </div>
-            <div data-aos="flip-left" data-aos-duration="2000" className="border-[#a6a6a6] border-y px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
+            <div data-aos="flip-left" data-aos-delay="800" className="border-[#a6a6a6] border-y px-4 py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
               <div className="flex flex-col text-[#a6a6a6] text-xs lg:text-base">
                 <h1>2020 - 2024</h1>
                 <p>4 years</p>
@@ -212,6 +264,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
       </section>
 
       <section id="projects" className="px-4 py-4 snap-start h-screen scroll-smooth relative">
@@ -269,12 +322,12 @@ export default function Home() {
               </div>
 
             </div>
-            <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             </div>
-            <div data-aos="fade-down" data-aos-delay="500" className="lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/alarmnet.png')]">
+            <div data-aos="fade-down" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/alarmnet.png')]">
 
             </div>
-            <div data-aos="flip-right" data-aos-delay="500" className="lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] lg:col-span-1 hidden lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
 
             </div>
           </div>
@@ -407,7 +460,7 @@ export default function Home() {
           <h1 data-aos="zoom-in" className="text-center my-2">... /Other Projects ...</h1>
           <div className="grid lg:grid-cols-3 gap-5 font-sans">
 
-            <div data-aos="fade-left" data-aos-delay="500" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
+            <div data-aos="fade-left" data-aos-delay="500" className="relative shadow-[#f5f5f5] shadow-md p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg')]">
                 <img className="w-full h-full object-contain" src="/images/recifind.png" alt="" />
               </div>
@@ -418,10 +471,10 @@ export default function Home() {
                 </div>
                 <p className="mt-5 mb-0 text-sm lg:text-lg text-[#121212]">Native Android Development / Object Detection / Image Classification / Java / TensorFlow Lite / XML </p>
               </div>
-
+              <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="700" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212] flex flex-col h-full">
+            <div data-aos="fade-left" data-aos-delay="700" className="relative shadow-[#f5f5f5] shadow-md p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212] flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://media.istockphoto.com/id/1279701336/vector/phone-with-app-alarm-clock-on-the-screen.jpg?s=612x612&w=0&k=20&c=2QwKQyXKVbZaMK6jjpaaQ5UUw62VcVw6VngFCIQDXmM=')]">
                 <img className="w-full h-full object-contain" src="/images/remindme.png" alt="Image description" />
               </div>
@@ -434,9 +487,10 @@ export default function Home() {
                 </div>
                 <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Java / XML</p>
               </div>
+              <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="900" className="shadow-[#f5f5f5] shadow-lg p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212]">
+            <div data-aos="fade-left" data-aos-delay="900" className="relative shadow-[#f5f5f5] shadow-md p-4 border border-[#3d3d3d] rounded-3xl text-[#f5f5f5] hover:bg-[#f5f5f5] hover:text-[#121212]">
               <div className="h-60 rounded-3xl bg-[url('https://img.freepik.com/free-vector/blur-pink-blue-abstract-gradient-background-vector_53876-174836.jpg')]">
                 <img className="w-full h-full object-contain scale-x-[-1]" src="/images/tastebuds.png" alt="" />
               </div>
@@ -449,7 +503,7 @@ export default function Home() {
                   <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Object Detection / Image Classification / Text Classification / Java / TensorFlow Lite / XML </p>
                 </div>
               </div>
-
+              <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
 
             </div>
           </div>
