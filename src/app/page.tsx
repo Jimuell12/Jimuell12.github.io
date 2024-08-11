@@ -211,15 +211,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experiences" className="px-4 py-4 h-screen scroll-smooth">
+      <section id="experiences" className="px-4 py-4 lg:h-screen scroll-smooth">
         <h1 data-aos="fade-down" className="text-center">... /My experiences ...</h1>
-        <div className="grid lg:grid-cols-2 lg:mt-10 items-center gap-2">
-          <div className="lg:col-span-1 relative items-center">
-          <VelocityScroll
-            text="Experiences"
-            default_velocity={5}
-            className="font-display text-center text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm"
-          />
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:mt-10 items-center justify-center gap-2">
+          <div data-aos="fade-right" className="lg:col-span-1 relative items-center">
+            <VelocityScroll
+              text="Experiences"
+              default_velocity={5}
+              className="font-display text-center text-7xl lg:text-9xl font-bold tracking-[-0.02em] text-white drop-shadow-sm"
+            />
           </div>
           <div className="lg:col-span-1 space-y-2 lg:space-y-5">
             <div data-aos="flip-right" data-aos-delay="500" className="border-[#a6a6a6] border-t px-4 py-2 lg:py-4 text-sm text-[#f5f5f5] hover:text-[#121212] hover:bg-[#f5f5f5] flex flex-row items-center justify-between">
@@ -522,7 +522,9 @@ export default function Home() {
               <h1 data-aos="fade-right" className="text-5xl lg:text-8xl font-bold">Jimuel</h1>
               <div className="flex flex-row items-center justify-between mt-5">
                 <div data-aos="fade-right" className="text-[#a6a6a6] text-base">
-                  <p>Full-stack</p>
+                  <WordRotate
+                    words={["Website", "Native Mobile", "Desktop", "Full-stack"]}
+                  />
                   <p>Developer</p>
                 </div>
                 <h1 data-aos="fade-left" className="text-5xl lg:text-8xl font-bold">Flojera</h1>
@@ -530,9 +532,10 @@ export default function Home() {
             </div>
             <div className="lg:col-span-2 mb-20 justify-self-end">
               <div data-aos="fade-right" className="flex justify-between">
-                <a href="/">Home</a>
                 <a href="/#about">About</a>
+                <a href="/#experiences">Experiences</a>
                 <a href="/#projects">Projects</a>
+
               </div>
               <div data-aos="zoom-in" className="border border-[#a6a6a6] mt-5 text-[#a6a6a6] font-sans rounded-3xl p-6">
                 <h1 className="text-xl">Site</h1>
