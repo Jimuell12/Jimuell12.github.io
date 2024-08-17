@@ -16,8 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-[#121212] no-scrollbar`}>
-        <div className=" w-full flex flex-col min-h-screen text-[#f5f5f5]">
+      <body className={`${montserrat.className} bg-[#121212]`}>
+        <div className=" w-full flex flex-col scroll-m-1 text-[#f5f5f5]">
           {children}
         </div>
       </body>

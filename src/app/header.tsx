@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <nav className='flex justify-between p-4 mx-auto container font-sans z-10 absolute h-min inset-0'>
-            <Link href="/" className='tracking-widest text-xs lg:text-lg font-semibold'>
+        <nav data-aos="fade-down" data-aos-delay="1000" className='flex justify-between p-4 h-min mx-auto container font-sans z-10 absolute lg:px-20 border-none inset-0'>
+            <Link href="/" className='tracking-widest text-xs lg:text-lg font-bold'>
                 Jimuel Flojera
             </Link>
             <div className='mt-5 flex-row gap-10 hidden lg:flex'>
