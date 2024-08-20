@@ -97,7 +97,7 @@ export default function Home() {
   }
 
   return (
-    <section className="mt-10 min-h-screen lg:mt-20 w-screen lg:mx-auto lg:container overflow-y-scroll  no-scrollbar overflow-x-hidden">
+    <section className="mt-10 scroll-smooth min-h-screen lg:mt-20 w-screen lg:mx-auto lg:container overflow-y-scroll  no-scrollbar overflow-x-hidden">
       <Particles
         className="fixed inset-0 -z-10 w-full h-full"
         quantity={300}
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
           </div>
           <div data-aos="fade-left" data-aos-delay="1000" className="lg:col-span-1 font-sans p-4">
-            <div className="border border-[#f5f5f5] bg-gradient-to-t from-blue-200 to-white rounded-3xl">
+            <div className="border-none backdrop-blur-10">
               <IconCloud iconSlugs={slugs} />
             </div>
           </div>
@@ -344,12 +344,12 @@ export default function Home() {
               </div>
 
             </div>
-            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-1 md:row-start-2 md:row-span-3 lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-1 md:row-start-2 md:row-span-3 lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-tl-3xl rounded-b-3xl overflow-hidden bg-cover bg-left bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
             </div>
-            <div data-aos="fade-down" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-2 md:row-start-2 md:row-span-2 lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-center bg-[url('/images/alarmnet.png')]">
+            <div data-aos="fade-down" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-2 md:row-start-2 md:row-span-2 lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-tr-3xl rounded-bl-3xl overflow-hidden bg-cover bg-center bg-[url('/images/alarmnet.png')]">
 
             </div>
-            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] lg:col-span-1 hidden md:flex lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
+            <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] lg:col-span-1 hidden md:flex lg:flex row-span-3 rounded-t-3xl rounded-br-3xl overflow-hidden bg-cover bg-right bg-[url('https://i.pinimg.com/736x/48/3b/cc/483bcc8a49b88f9369d3e5d26fdde331.jpg')]">
 
             </div>
           </div>
@@ -404,12 +404,12 @@ export default function Home() {
             </div>
 
           </div>
-          <div data-aos="flip-right" data-aos-delay="500" className="md:col-span-1 md:row-start-2 md:row-span-3 lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-right" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-1 md:row-start-2 md:row-span-3 lg:col-span-1 lg:row-start-2 lg:row-span-3 col-span-2 row-start-5 row-span-1 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-cover bg-left bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
           </div>
-          <div data-aos="fade-down" data-aos-delay="500" className="md:col-span-2 md:row-start-2 md:row-span-2 lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('/images/hvsa.png')]">
+          <div data-aos="fade-down" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-2 md:row-start-2 md:row-span-2 lg:col-span-2 lg:row-start-2 lg:row-span-2 col-span-6 row-start-6 row-span-2 p-2 min-w-max min-h-mad rounded-3xl overflow-hidden bg-contain bg-center bg-[url('/images/hvsa.png')]">
 
           </div>
-          <div data-aos="flip-left" data-aos-delay="500" className="md:col-span-1 lg:col-span-1 hidden md:flex lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
+          <div data-aos="flip-left" data-aos-delay="500" className="shadow-md shadow-[#f5f5f5] md:col-span-1 lg:col-span-1 hidden md:flex lg:flex row-span-3 rounded-3xl overflow-hidden bg-cover bg-right bg-[url('https://c4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-preview.jpg')]">
 
           </div>
         </div>
@@ -421,7 +421,7 @@ export default function Home() {
         </div>
         <div className="relative z-10">
           <h1 data-aos="zoom-in" className="text-center my-2">... /Other Projects ...</h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 font-sans">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 font-sans">
 
             <div data-aos="fade-left" data-aos-delay="500" className="relative shadow-[#f5f5f5] shadow-md p-4 border border-[#3d3d3d] bg-[#f5f5f5] rounded-3xl flex flex-col h-full">
               <div className="h-60 rounded-3xl bg-cover bg-[url('https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg')]">
@@ -430,9 +430,9 @@ export default function Home() {
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl text-[#121212]">Recifind</h1>
-                  <p className="text-xs lg:text-base  text-[#a6a6a6] italic mt-5">Recifind is an innovative app that leverages <span className="text-[#121212]">object detection technology to classify ingredients in real-time.</span>  By analyzing what’s visible through your camera, it provides personalized recipe suggestions based on the ingredients detected.</p>
+                  <p className="text-xs lg:text-sm  text-[#a6a6a6] italic mt-5">Recifind is an innovative app that leverages <span className="text-[#121212]">object detection technology to classify ingredients in real-time.</span>  By analyzing what’s visible through your camera, it provides personalized recipe suggestions based on the ingredients detected.</p>
                 </div>
-                <p className="mt-5 mb-0 text-sm lg:text-lg text-[#121212]">Native Android Development / Object Detection / Image Classification / Java / TensorFlow Lite / XML </p>
+                <p className="mt-5 mb-0 text-sm lg:text-base text-[#121212]">Native Android Development / Object Detection / Image Classification / Java / TensorFlow Lite / XML </p>
               </div>
               <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
             </div>
@@ -444,11 +444,11 @@ export default function Home() {
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">RemindMe</h1>
-                  <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">RemindMe is a Pomodoro timer app that enhances your productivity with </p>
-                  <span className="text-xs lg:text-base italic">integrated alarms to notify you precisely when it's time to switch tasks.</span>
-                  <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> Designed to help you stay focused and manage your time effectively, RemindMe ensures you maintain a productive rhythm throughout your day.</span>
+                  <p className="text-xs lg:text-sm text-justify text-[#a6a6a6] italic mt-5">RemindMe is a Pomodoro timer app that enhances your productivity with </p>
+                  <span className="text-xs lg:text-sm italic">integrated alarms to notify you precisely when it's time to switch tasks.</span>
+                  <span className="text-xs lg:text-sm text-justify text-[#a6a6a6] italic"> Designed to help you stay focused and manage your time effectively, RemindMe ensures you maintain a productive rhythm throughout your day.</span>
                 </div>
-                <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Java / XML</p>
+                <p className="mt-5 mb-0 text-sm lg:text-base">Native Android Development / Java / XML</p>
               </div>
               <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
             </div>
@@ -460,10 +460,10 @@ export default function Home() {
               <div className="flex flex-col flex-1 mt-5">
                 <div className="flex-1">
                   <h1 className="font-bold text-base lg:text-xl">TasteBuds</h1>
-                  <p className="text-xs lg:text-base text-justify text-[#a6a6a6] italic mt-5">Tastebud is an innovative app that utilizes</p>
-                  <span className="text-xs lg:text-base italic">facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
-                  <span className="text-xs lg:text-base text-justify text-[#a6a6a6] italic"> By analyzing the user's facial expressions, Tastebud provides insights into their taste preferences. Whether you’re experimenting with new flavors or just curious about taste reactions, Tastebud offers a unique way to understand and enjoy your food experiences. </span>
-                  <p className="mt-5 mb-0 text-sm lg:text-lg">Native Android Development / Object Detection / Image Classification / Text Classification / Java / TensorFlow Lite / XML </p>
+                  <p className="text-xs lg:text-sm text-justify text-[#a6a6a6] italic mt-5">Tastebud is an innovative app that utilizes</p>
+                  <span className="text-xs lg:text-sm italic">facial recognition technology to detect whether a person experiences a sour or sweet taste.</span>
+                  <span className="text-xs lg:text-sm text-justify text-[#a6a6a6] italic"> By analyzing the user's facial expressions, Tastebud provides insights into their taste preferences. Whether you’re experimenting with new flavors or just curious about taste reactions, Tastebud offers a unique way to understand and enjoy your food experiences. </span>
+                  <p className="mt-5 mb-0 text-sm lg:text-base">Native Android Development / Object Detection / Image Classification / Text Classification / Java / TensorFlow Lite / XML </p>
                 </div>
               </div>
               <BorderBeam className="rounded-3xl" size={300} borderWidth={5} duration={12} delay={9} />
