@@ -1,4 +1,8 @@
 @tailwind base;
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+  }
 @tailwind components;
 @tailwind utilities;
 
